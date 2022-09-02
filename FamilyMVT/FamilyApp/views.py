@@ -15,11 +15,11 @@ def agregarFamiliar(self, nombre, numFavorito, comidaFavorita, FechaNac):
 def mostrarFamilia(self):
 
     listaFamiliares = Familiar.objects.all()
-    
+
     datos = {'familiares' : listaFamiliares}
 
     plantilla = loader.get_template('mostrarFamilia.html')
 
     documento = plantilla.render(datos)
 
-    return HttpResponse(documento)
+    return HttpResponse(documento) #Comment

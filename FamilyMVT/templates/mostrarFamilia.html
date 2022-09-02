@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lista de familiares: </h2>
+
+    <p>
+        <table>
+        <tr>Nombre |</tr><tr>Número favorito |</tr><tr> Comida Favorita |</tr><tr> Fecha de nacimiento |</tr>
+        {%for familiar in familiares%}
+            <td>{{familiar.nombre}}</td><td>{{familiar.numFavorito}}</td><td> {{familiar.comidaFavorita}} </td><td> {{familiar.fechaNac}}</td>
+            <br>
+        </table>
+        {%endfor%}
+    </p>
+    
+</body>
+</html>
